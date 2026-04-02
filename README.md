@@ -23,10 +23,10 @@ and a small look-up table.
 ```python
 import cordic
 
-print(cordic.cos(1.0))       # ≈ 0.5403
-print(cordic.exp(1.0))       # ≈ 2.7183
-print(cordic.sqrt(2.0))      # ≈ 1.4142
-print(cordic.arctan(1.0))    # ≈ 0.7854
+print(cordic.cos(1.0))  # ≈ 0.5403
+print(cordic.exp(1.0))  # ≈ 2.7183
+print(cordic.sqrt(2.0))  # ≈ 1.4142
+print(cordic.arctan(1.0))  # ≈ 0.7854
 ```
 
 ## Installation

@@ -13,9 +13,9 @@ Compute cosine, sine, and tangent of an angle in radians:
 ```python
 import cordic
 
-print(cordic.cos(1.0))   # ≈ 0.5403
-print(cordic.sin(1.0))   # ≈ 0.8415
-print(cordic.tan(1.0))   # ≈ 1.5574
+print(cordic.cos(1.0))  # ≈ 0.5403
+print(cordic.sin(1.0))  # ≈ 0.8415
+print(cordic.tan(1.0))  # ≈ 1.5574
 ```
 
 ## Inverse trigonometric functions
@@ -26,9 +26,9 @@ Recover angles from trigonometric values:
 import math
 import cordic
 
-print(cordic.arccos(0.5))   # ≈ π/3 ≈ 1.0472
-print(cordic.arcsin(0.5))   # ≈ π/6 ≈ 0.5236
-print(cordic.arctan(1.0))   # ≈ π/4 ≈ 0.7854
+print(cordic.arccos(0.5))  # ≈ π/3 ≈ 1.0472
+print(cordic.arcsin(0.5))  # ≈ π/6 ≈ 0.5236
+print(cordic.arctan(1.0))  # ≈ π/4 ≈ 0.7854
 ```
 
 ## Exponential and logarithm
@@ -36,9 +36,9 @@ print(cordic.arctan(1.0))   # ≈ π/4 ≈ 0.7854
 ```python
 import cordic
 
-print(cordic.exp(1.0))   # ≈ e ≈ 2.7183
-print(cordic.exp(0.0))   # = 1.0
-print(cordic.ln(1.0))    # = 0.0
+print(cordic.exp(1.0))  # ≈ e ≈ 2.7183
+print(cordic.exp(0.0))  # = 1.0
+print(cordic.ln(1.0))  # = 0.0
 print(cordic.ln(2.718281828))  # ≈ 1.0
 ```
 
@@ -47,10 +47,10 @@ print(cordic.ln(2.718281828))  # ≈ 1.0
 ```python
 import cordic
 
-print(cordic.sqrt(2.0))    # ≈ 1.4142
-print(cordic.sqrt(9.0))    # ≈ 3.0
-print(cordic.cbrt(27.0))   # ≈ 3.0
-print(cordic.cbrt(-8.0))   # ≈ -2.0
+print(cordic.sqrt(2.0))  # ≈ 1.4142
+print(cordic.sqrt(9.0))  # ≈ 3.0
+print(cordic.cbrt(27.0))  # ≈ 3.0
+print(cordic.cbrt(-8.0))  # ≈ -2.0
 ```
 
 ## Multiplication without a multiplier
@@ -60,8 +60,8 @@ CORDIC can multiply two numbers using only shift-and-add operations:
 ```python
 import cordic
 
-print(cordic.multiply(3.0, 4.0))    # ≈ 12.0
-print(cordic.multiply(-2.5, 6.0))   # ≈ -15.0
+print(cordic.multiply(3.0, 4.0))  # ≈ 12.0
+print(cordic.multiply(-2.5, 6.0))  # ≈ -15.0
 ```
 
 ## Angle normalization
@@ -129,7 +129,7 @@ t = 2.5
 print(f"exp(ln({t})) = {cordic.exp(cordic.ln(t)):.10f}")
 
 # sqrt(x)² = x
-print(f"sqrt(3)² = {cordic.sqrt(3.0)**2:.10f}")
+print(f"sqrt(3)² = {cordic.sqrt(3.0) ** 2:.10f}")
 ```
 
 ## Tips

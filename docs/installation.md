@@ -119,8 +119,8 @@ After installation, verify that the package loads correctly:
 ```python
 import cordic
 
-print(cordic.cos(1.0))    # ≈ 0.5403
-print(cordic.sqrt(2.0))   # ≈ 1.4142
+print(cordic.cos(1.0))  # ≈ 0.5403
+print(cordic.sqrt(2.0))  # ≈ 1.4142
 print("cordic is working!")
 ```
 

@@ -69,8 +69,8 @@ Return the cosine of *beta* (radians) using the CORDIC rotation mode.
 ```python
 import cordic
 
-cordic.cos(0.0)       # 1.0
-cordic.cos(3.14159)   # ≈ -1.0
+cordic.cos(0.0)  # 1.0
+cordic.cos(3.14159)  # ≈ -1.0
 ```
 
 ---
@@ -88,8 +88,8 @@ Return the sine of *beta* (radians) using the CORDIC rotation mode.
 ```python
 import cordic
 
-cordic.sin(0.0)           # 0.0
-cordic.sin(1.5707963)     # ≈ 1.0
+cordic.sin(0.0)  # 0.0
+cordic.sin(1.5707963)  # ≈ 1.0
 ```
 
 ---
@@ -107,7 +107,7 @@ Return the tangent of *beta* (radians) using the CORDIC algorithm.
 ```python
 import cordic
 
-cordic.tan(0.7854)   # ≈ 1.0
+cordic.tan(0.7854)  # ≈ 1.0
 ```
 
 ---
@@ -125,8 +125,8 @@ Return the arccosine of *t* using the CORDIC algorithm.
 ```python
 import cordic
 
-cordic.arccos(0.5)    # ≈ π/3 ≈ 1.0472
-cordic.arccos(1.0)    # ≈ 0.0
+cordic.arccos(0.5)  # ≈ π/3 ≈ 1.0472
+cordic.arccos(1.0)  # ≈ 0.0
 ```
 
 ---
@@ -144,8 +144,8 @@ Return the arcsine of *t* using the CORDIC algorithm.
 ```python
 import cordic
 
-cordic.arcsin(0.5)    # ≈ π/6 ≈ 0.5236
-cordic.arcsin(1.0)    # ≈ π/2 ≈ 1.5708
+cordic.arcsin(0.5)  # ≈ π/6 ≈ 0.5236
+cordic.arcsin(1.0)  # ≈ π/2 ≈ 1.5708
 ```
 
 ---
@@ -164,8 +164,8 @@ Return the arctangent of *y*/*x* using the CORDIC vectoring mode.
 ```python
 import cordic
 
-cordic.arctan(1.0)         # ≈ π/4 ≈ 0.7854
-cordic.arctan(1.0, 1.0)    # ≈ π/4 ≈ 0.7854
+cordic.arctan(1.0)  # ≈ π/4 ≈ 0.7854
+cordic.arctan(1.0, 1.0)  # ≈ π/4 ≈ 0.7854
 ```
 
 ---
@@ -183,8 +183,8 @@ Return $e^x$ using the hyperbolic CORDIC algorithm.
 ```python
 import cordic
 
-cordic.exp(0.0)    # 1.0
-cordic.exp(1.0)    # ≈ 2.7183
+cordic.exp(0.0)  # 1.0
+cordic.exp(1.0)  # ≈ 2.7183
 ```
 
 ---
@@ -202,8 +202,8 @@ Return the natural logarithm of *x* using the hyperbolic CORDIC algorithm.
 ```python
 import cordic
 
-cordic.ln(1.0)             # 0.0
-cordic.ln(2.718281828)     # ≈ 1.0
+cordic.ln(1.0)  # 0.0
+cordic.ln(2.718281828)  # ≈ 1.0
 ```
 
 ---
@@ -221,8 +221,8 @@ Return the square root of *x* using the CORDIC algorithm.
 ```python
 import cordic
 
-cordic.sqrt(4.0)    # ≈ 2.0
-cordic.sqrt(2.0)    # ≈ 1.4142
+cordic.sqrt(4.0)  # ≈ 2.0
+cordic.sqrt(2.0)  # ≈ 1.4142
 ```
 
 ---
@@ -240,8 +240,8 @@ Return the cube root of *x* using the CORDIC algorithm.
 ```python
 import cordic
 
-cordic.cbrt(27.0)    # ≈ 3.0
-cordic.cbrt(-8.0)    # ≈ -2.0
+cordic.cbrt(27.0)  # ≈ 3.0
+cordic.cbrt(-8.0)  # ≈ -2.0
 ```
 
 ---
@@ -263,7 +263,7 @@ Multiply *x* and *y* using CORDIC shift-and-add (no hardware multiplier).
 ```python
 import cordic
 
-cordic.multiply(3.0, 4.0)    # ≈ 12.0
+cordic.multiply(3.0, 4.0)  # ≈ 12.0
 ```
 
 ---
@@ -282,8 +282,8 @@ Shift angle *alpha* into the interval $[\beta, \beta + 2\pi)$.
 import math
 import cordic
 
-cordic.angle_shift(7.0, 0.0)          # ≈ 0.7168
-cordic.angle_shift(7.0, -math.pi)     # ≈ 0.7168
+cordic.angle_shift(7.0, 0.0)  # ≈ 0.7168
+cordic.angle_shift(7.0, -math.pi)  # ≈ 0.7168
 ```
 
 ---

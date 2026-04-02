@@ -33,22 +33,22 @@ number of correct bits in the result.
 import cordic
 
 # Trigonometric functions
-print(cordic.cos(1.0))        # ≈ 0.5403
-print(cordic.sin(1.0))        # ≈ 0.8415
-print(cordic.tan(0.7854))     # ≈ 1.0000
+print(cordic.cos(1.0))  # ≈ 0.5403
+print(cordic.sin(1.0))  # ≈ 0.8415
+print(cordic.tan(0.7854))  # ≈ 1.0000
 
 # Inverse trigonometric functions
-print(cordic.arccos(0.5))     # ≈ 1.0472
-print(cordic.arcsin(0.5))     # ≈ 0.5236
-print(cordic.arctan(1.0))     # ≈ 0.7854
+print(cordic.arccos(0.5))  # ≈ 1.0472
+print(cordic.arcsin(0.5))  # ≈ 0.5236
+print(cordic.arctan(1.0))  # ≈ 0.7854
 
 # Exponential and logarithmic functions
-print(cordic.exp(1.0))        # ≈ 2.7183
-print(cordic.ln(2.718281828)) # ≈ 1.0000
+print(cordic.exp(1.0))  # ≈ 2.7183
+print(cordic.ln(2.718281828))  # ≈ 1.0000
 
 # Root functions
-print(cordic.sqrt(2.0))       # ≈ 1.4142
-print(cordic.cbrt(27.0))      # ≈ 3.0000
+print(cordic.sqrt(2.0))  # ≈ 1.4142
+print(cordic.cbrt(27.0))  # ≈ 3.0000
 
 # Multiplication via shift-and-add
 print(cordic.multiply(3.0, 4.0))  # ≈ 12.0
