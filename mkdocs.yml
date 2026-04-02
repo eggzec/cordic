@@ -1,0 +1,45 @@
+site_name: cordic
+site_description: CORDIC Algorithm for Python
+site_url: https://eggzec.github.io/cordic
+repo_url: https://github.com/eggzec/cordic
+repo_name: eggzec/cordic
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/eggzec/cordic
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/cordic/
+
+theme:
+  name: material
+  features:
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - tables
+  - fenced_code
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
+  - toc:
+      permalink: true
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - Home: index.md
+  - Theory: theory.md
+  - Installation: installation.md
+  - Quickstart: quickstart.md
+  - API Reference: api.md
+  - References: references.md
