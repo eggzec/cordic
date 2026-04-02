@@ -1,0 +1,95 @@
+! ---------- main module -----------------------------------------------
+python module _cordic
+    interface
+
+        double precision function arccos_cordic(t, n)
+            intent(c) arccos_cordic
+            intent(c)
+            double precision intent(c, in) :: t
+            integer intent(c, in) :: n
+        end function arccos_cordic
+
+        double precision function arcsin_cordic(t, n)
+            intent(c) arcsin_cordic
+            intent(c)
+            double precision intent(c, in) :: t
+            integer intent(c, in) :: n
+        end function arcsin_cordic
+
+        double precision function arctan_cordic(x, y, n)
+            intent(c) arctan_cordic
+            intent(c)
+            double precision intent(c, in) :: x
+            double precision intent(c, in) :: y
+            integer intent(c, in) :: n
+        end function arctan_cordic
+
+        double precision function cos_cordic(beta, n)
+            ! Compute cosine via cossin_cordic (helper wrapper).
+            fortranname cos_cordic_wrapper
+            intent(c) cos_cordic
+            intent(c)
+            double precision intent(c, in) :: beta
+            integer intent(c, in) :: n
+        end function cos_cordic
+
+        double precision function sin_cordic(beta, n)
+            ! Compute sine via cossin_cordic (helper wrapper).
+            fortranname sin_cordic_wrapper
+            intent(c) sin_cordic
+            intent(c)
+            double precision intent(c, in) :: beta
+            integer intent(c, in) :: n
+        end function sin_cordic
+
+        double precision function tan_cordic(beta, n)
+            intent(c) tan_cordic
+            intent(c)
+            double precision intent(c, in) :: beta
+            integer intent(c, in) :: n
+        end function tan_cordic
+
+        double precision function exp_cordic(x, n)
+            intent(c) exp_cordic
+            intent(c)
+            double precision intent(c, in) :: x
+            integer intent(c, in) :: n
+        end function exp_cordic
+
+        double precision function ln_cordic(x, n)
+            intent(c) ln_cordic
+            intent(c)
+            double precision intent(c, in) :: x
+            integer intent(c, in) :: n
+        end function ln_cordic
+
+        double precision function sqrt_cordic(x, n)
+            intent(c) sqrt_cordic
+            intent(c)
+            double precision intent(c, in) :: x
+            integer intent(c, in) :: n
+        end function sqrt_cordic
+
+        double precision function cbrt_cordic(x, n)
+            intent(c) cbrt_cordic
+            intent(c)
+            double precision intent(c, in) :: x
+            integer intent(c, in) :: n
+        end function cbrt_cordic
+
+        double precision function multiply_cordic(x, y)
+            intent(c) multiply_cordic
+            intent(c)
+            double precision intent(c, in) :: x
+            double precision intent(c, in) :: y
+        end function multiply_cordic
+
+        double precision function angle_shift(alpha, beta)
+            intent(c) angle_shift
+            intent(c)
+            double precision intent(c, in) :: alpha
+            double precision intent(c, in) :: beta
+        end function angle_shift
+
+    end interface
+end python module _cordic
